@@ -1,0 +1,454 @@
+[SCRIPT] 1. Running LAMA translator
+../assign_1/trnkato2_assign_1.pddl ../assign_1/problem4.pddl
+Parsing... [0.010s CPU, 0.046s wall-clock]
+Instantiating...
+Normalizing task... [0.000s CPU, 0.000s wall-clock]
+Generating Datalog program... [0.000s CPU, 0.001s wall-clock]
+Normalizing Datalog program...
+Normalizing Datalog program: [0.000s CPU, 0.019s wall-clock]
+Preparing model... [0.000s CPU, 0.001s wall-clock]
+Generated 47 rules.
+Computing model... [0.150s CPU, 0.149s wall-clock]
+5505 relevant atoms
+2128 auxiliary atoms
+7633 final queue length
+16641 total queue pushes
+Completing instantiation... [0.490s CPU, 0.503s wall-clock]
+Instantiating: [0.650s CPU, 0.680s wall-clock]
+Computing fact groups...
+Finding invariants... 11 initial candidates
+[0.000s CPU, 0.000s wall-clock]
+Checking invariant weight... [0.000s CPU, 0.000s wall-clock]
+Instantiating groups... [0.000s CPU, 0.000s wall-clock]
+Collecting mutex groups... [0.000s CPU, 0.000s wall-clock]
+Choosing groups...
+363 uncovered facts
+Choosing groups: [0.000s CPU, 0.001s wall-clock]
+Building translation key... [0.000s CPU, 0.001s wall-clock]
+Computing fact groups: [0.000s CPU, 0.003s wall-clock]
+Building STRIPS to SAS dictionary... [0.000s CPU, 0.001s wall-clock]
+Building dictionary for full mutex groups... [0.000s CPU, 0.001s wall-clock]
+Translating task...
+Processing axioms...
+Simplifying axioms... [0.000s CPU, 0.000s wall-clock]
+Processing axioms: [0.020s CPU, 0.022s wall-clock]
+Translating task: [0.270s CPU, 0.274s wall-clock]
+1604 implied effects removed
+0 effect conditions simplified
+0 implied preconditions added
+Building mutex information... [0.000s CPU, 0.001s wall-clock]
+Detecting unreachable propositions...
+164 operators removed
+4 propositions removed
+Detecting unreachable propositions: [0.060s CPU, 0.058s wall-clock]
+Writing translation key... [0.000s CPU, 0.001s wall-clock]
+Writing mutex key... [0.000s CPU, 0.003s wall-clock]
+Writing output... [0.030s CPU, 0.034s wall-clock]
+Done! [1.040s CPU, 1.119s wall-clock]
+ 
+[SCRIPT] 2. Running preprocessor
+Building causal graph...
+The causal graph is not acyclic.
+364 variables of 364 necessary
+4884 of 4884 operators necessary.
+0 of 0 axiom rules necessary.
+Building domain transition graphs...
+solveable in poly time 0
+Building successor generator...
+Writing output...
+done
+
+[SCRIPT] 3. Copy to the pool
+[INFO] Use 4 instances of stochastic searches
+[Info] Search iteration 1
+[Info] Using the following heuristic(s):
+       FF heuristic with preferred operators
+       Landmark heuristic with preferred operators
+[LAMA] Best heuristic value: 210/446/22 priority: 0/0/0/0/0 [expanded 1 state(s)]
+[LAMA] Best heuristic value: 208/446/22 priority: 0/1000/0/1001/1001 [expanded 2 state(s)]
+[LAMA] Best heuristic value: 196/433/21 priority: 0/1995/0/1996/1996 [expanded 4 state(s)]
+[LAMA] Best heuristic value: 194/433/21 priority: 0/2996/0/2996/2997 [expanded 5 state(s)]
+[LAMA] Best heuristic value: 181/396/20 priority: 0/3995/0/3996/3996 [expanded 6 state(s)]
+[LAMA] Best heuristic value: 168/371/19 priority: 0/4991/0/4992/4992 [expanded 9 state(s)]
+[LAMA] Best heuristic value: 163/371/19 priority: 0/5986/0/5986/5987 [expanded 12 state(s)]
+[LAMA] Best heuristic value: 161/371/19 priority: 0/6986/0/6986/6987 [expanded 13 state(s)]
+[LAMA] Best heuristic value: 161/358/18 priority: 0/7986/0/7986/7986 [expanded 14 state(s)]
+[LAMA] Best heuristic value: 148/334/18 priority: 0/8985/0/8986/8986 [expanded 16 state(s)]
+[LAMA] Best heuristic value: 135/309/17 priority: 0/9981/0/9982/9982 [expanded 20 state(s)]
+[LAMA] Best heuristic value: 130/283/15 priority: 0/10976/0/10976/10976 [expanded 24 state(s)]
+[LAMA] Best heuristic value: 128/283/15 priority: 0/11976/0/11977/11977 [expanded 25 state(s)]
+[LAMA] Best heuristic value: 123/283/15 priority: 0/12971/0/12972/12972 [expanded 27 state(s)]
+[LAMA] Best heuristic value: 121/283/15 priority: 0/13971/0/13972/13972 [expanded 28 state(s)]
+[LAMA] Best heuristic value: 108/246/14 priority: 0/14970/0/14971/14971 [expanded 29 state(s)]
+[LAMA] Best heuristic value: 95/221/13 priority: 0/15967/0/15968/15968 [expanded 32 state(s)]
+[LAMA] Best heuristic value: 90/195/11 priority: 0/16962/0/16962/16963 [expanded 35 state(s)]
+[LAMA] Best heuristic value: 88/195/11 priority: 0/17963/0/17963/17963 [expanded 36 state(s)]
+[LAMA] Best heuristic value: 83/195/11 priority: 0/18957/0/18958/18958 [expanded 38 state(s)]
+[LAMA] Best heuristic value: 81/195/11 priority: 0/19957/0/19958/19958 [expanded 39 state(s)]
+[LAMA] Best heuristic value: 68/158/10 priority: 0/20956/0/20957/20957 [expanded 40 state(s)]
+[LAMA] Best heuristic value: 55/133/9 priority: 0/21952/0/21953/21953 [expanded 43 state(s)]
+[LAMA] Best heuristic value: 50/107/7 priority: 0/22947/0/22947/22948 [expanded 46 state(s)]
+[LAMA] Best heuristic value: 48/107/7 priority: 0/23948/0/23948/23948 [expanded 47 state(s)]
+[LAMA] Best heuristic value: 48/94/6 priority: 0/24942/0/24943/24943 [expanded 49 state(s)]
+[LAMA] Best heuristic value: 43/94/6 priority: 0/25937/0/25938/25938 [expanded 52 state(s)]
+[LAMA] Best heuristic value: 41/94/6 priority: 0/26937/0/26938/26938 [expanded 53 state(s)]
+[LAMA] Best heuristic value: 28/57/5 priority: 0/27936/0/27937/27937 [expanded 54 state(s)]
+[LAMA] Best heuristic value: 28/54/4 priority: 0/28937/0/28937/28938 [expanded 55 state(s)]
+[LAMA] Best heuristic value: 23/41/3 priority: 0/29936/0/29936/29936 [expanded 57 state(s)]
+[LAMA] Best heuristic value: 21/41/3 priority: 0/30936/0/30937/30937 [expanded 58 state(s)]
+[LAMA] Best heuristic value: 8/16/2 priority: 0/31935/0/31936/31936 [expanded 59 state(s)]
+[LAMA] Best heuristic value: 7/13/1 priority: 0/32936/0/32936/32937 [expanded 60 state(s)]
+[LAMA] Solution found!
+Plan length: 40 step(s), cost: 460.
+Expanded 61 state(s).
+Generated 347 state(s).
+Search time: 0.02 seconds
+Total time: 0.13 seconds
+[Info] Search iteration 2
+[Info] Using the following heuristic(s):
+       FF heuristic with preferred operators
+       Landmark heuristic with preferred operators
+Conducting weighted A* search, weight is 5, bound is 460.
+[LAMA] Best heuristic value: 210/446 priority: 0/0/0/0 [expanded 1 state(s)]
+[LAMA] Best heuristic value: 208/446 priority: 0/999/1/1000 [expanded 2 state(s)]
+[LAMA] Best heuristic value: 196/433 priority: 1/1993/1/1994 [expanded 4 state(s)]
+[LAMA] Best heuristic value: 194/433 priority: 2/2993/1/2993 [expanded 5 state(s)]
+[LAMA] Best heuristic value: 189/433 priority: 3/3989/1/3990 [expanded 7 state(s)]
+[LAMA] Best heuristic value: 187/433 priority: 4/4988/1/4989 [expanded 8 state(s)]
+[LAMA] Best heuristic value: 174/408 priority: 5/5960/1/5961 [expanded 20 state(s)]
+[LAMA] Best heuristic value: 161/383 priority: 6/6953/1/6954 [expanded 25 state(s)]
+[LAMA] Best heuristic value: 148/346 priority: 7/7945/1/7946 [expanded 30 state(s)]
+[LAMA] Best heuristic value: 143/320 priority: 8/8940/1/8940 [expanded 33 state(s)]
+[LAMA] Best heuristic value: 141/320 priority: 9/9940/1/9940 [expanded 34 state(s)]
+[LAMA] Best heuristic value: 136/320 priority: 10/10935/1/10936 [expanded 36 state(s)]
+[LAMA] Best heuristic value: 134/320 priority: 11/11934/1/11935 [expanded 37 state(s)]
+[LAMA] Best heuristic value: 121/295 priority: 12/12916/1/12917 [expanded 45 state(s)]
+[LAMA] Best heuristic value: 108/258 priority: 13/13908/1/13909 [expanded 50 state(s)]
+[LAMA] Best heuristic value: 103/232 priority: 14/14903/1/14903 [expanded 53 state(s)]
+[LAMA] Best heuristic value: 101/232 priority: 15/15903/1/15903 [expanded 54 state(s)]
+[LAMA] Best heuristic value: 96/232 priority: 16/16898/1/16899 [expanded 56 state(s)]
+[LAMA] Best heuristic value: 94/232 priority: 17/17897/1/17898 [expanded 57 state(s)]
+[LAMA] Best heuristic value: 81/207 priority: 18/18885/1/18886 [expanded 62 state(s)]
+[LAMA] Best heuristic value: 68/170 priority: 19/19877/1/19878 [expanded 67 state(s)]
+[LAMA] Best heuristic value: 63/144 priority: 20/20872/1/20872 [expanded 70 state(s)]
+[LAMA] Best heuristic value: 61/144 priority: 21/21872/1/21872 [expanded 71 state(s)]
+[LAMA] Best heuristic value: 56/131 priority: 22/22867/1/22868 [expanded 73 state(s)]
+[LAMA] Best heuristic value: 54/131 priority: 23/23867/1/23867 [expanded 74 state(s)]
+[LAMA] Best heuristic value: 41/106 priority: 24/24862/1/24863 [expanded 76 state(s)]
+[LAMA] Best heuristic value: 41/103 priority: 25/25862/1/25862 [expanded 77 state(s)]
+[LAMA] Best heuristic value: 28/66 priority: 26/26857/1/26858 [expanded 79 state(s)]
+[LAMA] Best heuristic value: 23/53 priority: 27/27855/1/27855 [expanded 81 state(s)]
+[LAMA] Best heuristic value: 21/53 priority: 28/28855/1/28855 [expanded 82 state(s)]
+[LAMA] Best heuristic value: 8/16 priority: 29/29852/1/29853 [expanded 83 state(s)]
+[LAMA] Best heuristic value: 7/13 priority: 30/30852/1/30852 [expanded 84 state(s)]
+[LAMA] Solution found!
+Plan length: 38 step(s), cost: 456.
+Expanded 85 state(s).
+Generated 611 state(s).
+Search time: 0.04 seconds
+Total time: 0.17 seconds
+[Info] Search iteration 3
+[Info] Using the following heuristic(s):
+       FF heuristic with preferred operators
+       Landmark heuristic with preferred operators
+Conducting weighted A* search, weight is 3, bound is 456.
+[LAMA] Best heuristic value: 210/446 priority: 0/0/0/0 [expanded 1 state(s)]
+[LAMA] Best heuristic value: 208/446 priority: 1/1000/0/1000 [expanded 2 state(s)]
+[LAMA] Best heuristic value: 196/433 priority: 2/1994/0/1995 [expanded 4 state(s)]
+[LAMA] Best heuristic value: 194/433 priority: 3/2994/0/2994 [expanded 5 state(s)]
+[LAMA] Best heuristic value: 189/433 priority: 4/3990/0/3991 [expanded 7 state(s)]
+[LAMA] Best heuristic value: 187/433 priority: 5/4989/0/4990 [expanded 9 state(s)]
+[LAMA] Best heuristic value: 174/408 priority: 6/5961/0/5962 [expanded 22 state(s)]
+[LAMA] Best heuristic value: 161/383 priority: 7/6954/0/6955 [expanded 27 state(s)]
+[LAMA] Best heuristic value: 148/346 priority: 8/7945/0/7946 [expanded 33 state(s)]
+[LAMA] Best heuristic value: 143/320 priority: 9/8940/0/8940 [expanded 36 state(s)]
+[LAMA] Best heuristic value: 141/320 priority: 10/9940/0/9940 [expanded 37 state(s)]
+[LAMA] Best heuristic value: 136/320 priority: 11/10935/0/10936 [expanded 39 state(s)]
+[LAMA] Best heuristic value: 134/320 priority: 12/11934/0/11935 [expanded 40 state(s)]
+[LAMA] Best heuristic value: 121/295 priority: 13/12916/0/12917 [expanded 48 state(s)]
+[LAMA] Best heuristic value: 108/258 priority: 14/13884/0/13885 [expanded 66 state(s)]
+[LAMA] Best heuristic value: 103/232 priority: 15/14879/0/14879 [expanded 69 state(s)]
+[LAMA] Best heuristic value: 101/232 priority: 16/15879/0/15879 [expanded 70 state(s)]
+[LAMA] Best heuristic value: 96/232 priority: 17/16874/0/16875 [expanded 72 state(s)]
+[LAMA] Best heuristic value: 94/232 priority: 18/17873/0/17874 [expanded 73 state(s)]
+[LAMA] Best heuristic value: 81/207 priority: 19/18861/0/18862 [expanded 78 state(s)]
+[LAMA] Best heuristic value: 68/170 priority: 20/19840/0/19841 [expanded 90 state(s)]
+[LAMA] Best heuristic value: 63/144 priority: 21/20835/0/20835 [expanded 93 state(s)]
+[LAMA] Best heuristic value: 61/144 priority: 22/21835/0/21835 [expanded 94 state(s)]
+[LAMA] Best heuristic value: 56/131 priority: 23/22830/0/22831 [expanded 96 state(s)]
+[LAMA] Best heuristic value: 54/131 priority: 24/23830/0/23830 [expanded 97 state(s)]
+[LAMA] Best heuristic value: 41/106 priority: 25/24825/0/24826 [expanded 99 state(s)]
+[LAMA] Best heuristic value: 41/103 priority: 26/25825/0/25825 [expanded 100 state(s)]
+[LAMA] Best heuristic value: 28/66 priority: 27/26820/0/26820 [expanded 102 state(s)]
+[LAMA] Best heuristic value: 23/53 priority: 28/27818/0/27819 [expanded 104 state(s)]
+[LAMA] Best heuristic value: 21/53 priority: 29/28818/0/28818 [expanded 105 state(s)]
+[LAMA] Best heuristic value: 8/16 priority: 30/29814/0/29815 [expanded 106 state(s)]
+[LAMA] Best heuristic value: 7/13 priority: 31/30814/0/30814 [expanded 107 state(s)]
+[LAMA] Solution found!
+Plan length: 36 step(s), cost: 452.
+Expanded 111 state(s).
+Generated 778 state(s).
+Search time: 0.05 seconds
+Total time: 0.22 seconds
+[Info] Search iteration 4
+[Info] Using the following heuristic(s):
+       FF heuristic with preferred operators
+       Landmark heuristic with preferred operators
+Conducting weighted A* search, weight is 2, bound is 452.
+[LAMA] Best heuristic value: 210/446 priority: 0/0/0/0 [expanded 1 state(s)]
+[LAMA] Best heuristic value: 208/446 priority: 1/999/0/1000 [expanded 2 state(s)]
+[LAMA] Best heuristic value: 196/433 priority: 2/1993/0/1994 [expanded 4 state(s)]
+[LAMA] Best heuristic value: 194/433 priority: 3/2993/0/2993 [expanded 5 state(s)]
+[LAMA] Best heuristic value: 189/433 priority: 4/3989/0/3990 [expanded 7 state(s)]
+[LAMA] Best heuristic value: 187/433 priority: 5/4988/0/4989 [expanded 8 state(s)]
+[LAMA] Best heuristic value: 174/408 priority: 6/5953/0/5954 [expanded 20 state(s)]
+[LAMA] Best heuristic value: 161/383 priority: 7/6946/0/6947 [expanded 25 state(s)]
+[LAMA] Best heuristic value: 148/346 priority: 8/7354/0/7355 [expanded 349 state(s)]
+[LAMA] Best heuristic value: 143/320 priority: 9/8349/0/8349 [expanded 352 state(s)]
+[LAMA] Best heuristic value: 141/320 priority: 10/9349/0/9349 [expanded 353 state(s)]
+[LAMA] Best heuristic value: 136/320 priority: 11/10344/0/10345 [expanded 355 state(s)]
+[LAMA] Best heuristic value: 134/320 priority: 12/11343/0/11344 [expanded 356 state(s)]
+[LAMA] Best heuristic value: 121/295 priority: 13/12319/0/12319 [expanded 365 state(s)]
+[LAMA] Best heuristic value: 108/258 priority: 14/11883/0/11883 [expanded 1138 state(s)]
+[LAMA] Best heuristic value: 103/232 priority: 15/12877/0/12877 [expanded 1142 state(s)]
+[LAMA] Best heuristic value: 101/232 priority: 16/13876/0/13876 [expanded 1143 state(s)]
+[LAMA] Best heuristic value: 96/232 priority: 17/14871/0/14871 [expanded 1145 state(s)]
+[LAMA] Best heuristic value: 94/232 priority: 18/15871/0/15871 [expanded 1146 state(s)]
+[LAMA] Best heuristic value: 81/207 priority: 19/16855/0/16855 [expanded 1152 state(s)]
+[LAMA] Best heuristic value: 68/170 priority: 20/17833/0/17833 [expanded 1164 state(s)]
+[LAMA] Best heuristic value: 63/144 priority: 21/18827/0/18827 [expanded 1171 state(s)]
+[LAMA] Best heuristic value: 61/144 priority: 22/19826/0/19826 [expanded 1173 state(s)]
+[LAMA] Best heuristic value: 56/131 priority: 23/20821/0/20821 [expanded 1175 state(s)]
+[LAMA] Best heuristic value: 54/131 priority: 24/21820/0/21820 [expanded 1176 state(s)]
+[LAMA] Best heuristic value: 41/106 priority: 25/22814/0/22814 [expanded 1178 state(s)]
+[LAMA] Best heuristic value: 41/103 priority: 26/23814/0/23814 [expanded 1179 state(s)]
+[LAMA] Best heuristic value: 28/66 priority: 27/24808/0/24808 [expanded 1184 state(s)]
+[LAMA] Best heuristic value: 23/53 priority: 28/25805/0/25805 [expanded 1188 state(s)]
+[LAMA] Best heuristic value: 21/53 priority: 29/26804/0/26804 [expanded 1190 state(s)]
+[LAMA] Best heuristic value: 8/16 priority: 30/27800/0/27800 [expanded 1191 state(s)]
+[LAMA] Best heuristic value: 7/13 priority: 31/28799/0/28799 [expanded 1192 state(s)]
+[LAMA] Solution found!
+Plan length: 34 step(s), cost: 448.
+Expanded 2216 state(s).
+Generated 16801 state(s).
+Search time: 1.02 seconds
+Total time: 1.24 seconds
+[Info] Search iteration 5
+[Info] Using the following heuristic(s):
+       FF heuristic 
+       Landmark heuristic 
+Conducting weighted A* search, weight is 1, bound is 448.
+[LAMA] Best heuristic value: 210/446 priority: 0/0 [expanded 1 state(s)]
+[LAMA] Best heuristic value: 208/446 priority: 0/1 [expanded 2 state(s)]
+[LAMA] Best heuristic value: 196/433 priority: 4/3 [expanded 4 state(s)]
+[LAMA] Best heuristic value: 194/433 priority: 4/4 [expanded 5 state(s)]
+[LAMA] Best heuristic value: 189/433 priority: 8/8 [expanded 8 state(s)]
+[LAMA] Best heuristic value: 187/433 priority: 8/8 [expanded 9 state(s)]
+[LAMA] Best heuristic value: 187/420 priority: 140/140 [expanded 103 state(s)]
+[LAMA] Best heuristic value: 182/420 priority: 149/149 [expanded 108 state(s)]
+[LAMA] Best heuristic value: 181/408 priority: 336/335 [expanded 231 state(s)]
+[LAMA] Best heuristic value: 176/408 priority: 341/341 [expanded 236 state(s)]
+[LAMA] Best heuristic value: 174/408 priority: 341/341 [expanded 237 state(s)]
+[LAMA] Best heuristic value: 174/395 priority: 757/757 [expanded 467 state(s)]
+[LAMA] Best heuristic value: 169/395 priority: 769/769 [expanded 474 state(s)]
+[LAMA] Best heuristic value: 167/395 priority: 1347/1347 [expanded 915 state(s)]
+[LAMA] Best heuristic value: 167/383 priority: 1972/1972 [expanded 1517 state(s)]
+[LAMA] Best heuristic value: 167/331 priority: 2554/2553 [expanded 2027 state(s)]
+[LAMA] Best heuristic value: 161/331 priority: 2569/2568 [expanded 2042 state(s)]
+[LAMA] Best heuristic value: 161/321 priority: 2726/2726 [expanded 2211 state(s)]
+[LAMA] Best heuristic value: 161/312 priority: 3018/3018 [expanded 2433 state(s)]
+[LAMA] Best heuristic value: 161/302 priority: 4412/4412 [expanded 3016 state(s)]
+[LAMA] Best heuristic value: 161/283 priority: 7298/7298 [expanded 4809 state(s)]
+[LAMA] Best heuristic value: 156/283 priority: 7311/7311 [expanded 4828 state(s)]
+[LAMA] Best heuristic value: 154/283 priority: 7317/7317 [expanded 4834 state(s)]
+[LAMA] Best heuristic value: 154/273 priority: 8146/8146 [expanded 5616 state(s)]
+[LAMA] Best heuristic value: 149/273 priority: 8164/8164 [expanded 5626 state(s)]
+[LAMA] Best heuristic value: 149/264 priority: 9407/9407 [expanded 6773 state(s)]
+[LAMA] Best heuristic value: 147/264 priority: 9470/9470 [expanded 6844 state(s)]
+[LAMA] Best heuristic value: 147/254 priority: 9584/9584 [expanded 6942 state(s)]
+[LAMA] Best heuristic value: 142/254 priority: 9599/9599 [expanded 6962 state(s)]
+[LAMA] Best heuristic value: 140/254 priority: 9799/9799 [expanded 7161 state(s)]
+[LAMA] Best heuristic value: 140/245 priority: 10002/10002 [expanded 7393 state(s)]
+[LAMA] Best heuristic value: 136/245 priority: 10009/10009 [expanded 7405 state(s)]
+[LAMA] Best heuristic value: 134/245 priority: 10016/10016 [expanded 7420 state(s)]
+[LAMA] Best heuristic value: 134/235 priority: 10395/10395 [expanded 7632 state(s)]
+[LAMA] Best heuristic value: 129/235 priority: 10410/10410 [expanded 7649 state(s)]
+[LAMA] Best heuristic value: 127/235 priority: 10796/10796 [expanded 7976 state(s)]
+[LAMA] Best heuristic value: 127/234 priority: 26710/26710 [expanded 19955 state(s)]
+[LAMA] Best heuristic value: 127/225 priority: 28820/28820 [expanded 21566 state(s)]
+[LAMA] Best heuristic value: 122/215 priority: 28838/28838 [expanded 21590 state(s)]
+[LAMA] Best heuristic value: 120/215 priority: 28839/28839 [expanded 21593 state(s)]
+[LAMA] Best heuristic value: 116/215 priority: 41038/41038 [expanded 30482 state(s)]
+[LAMA] Best heuristic value: 114/215 priority: 41046/41046 [expanded 30491 state(s)]
+[LAMA] Best heuristic value: 114/207 priority: 58089/58089 [expanded 42457 state(s)]
+[LAMA] Best heuristic value: 114/197 priority: 58097/58097 [expanded 42462 state(s)]
+[LAMA] Best heuristic value: 109/197 priority: 58109/58109 [expanded 42470 state(s)]
+[LAMA] Best heuristic value: 107/197 priority: 58143/58143 [expanded 42493 state(s)]
+[LAMA] Best heuristic value: 107/187 priority: 58229/58229 [expanded 42537 state(s)]
+[LAMA] Best heuristic value: 102/177 priority: 58242/58242 [expanded 42560 state(s)]
+[LAMA] Best heuristic value: 100/177 priority: 58243/58243 [expanded 42563 state(s)]
+[LAMA] Best heuristic value: 96/177 priority: 58449/58449 [expanded 42718 state(s)]
+[LAMA] Best heuristic value: 94/177 priority: 58455/58455 [expanded 42724 state(s)]
+[LAMA] Best heuristic value: 94/168 priority: 58670/58670 [expanded 42829 state(s)]
+[LAMA] Best heuristic value: 89/158 priority: 58686/58686 [expanded 42848 state(s)]
+[LAMA] Best heuristic value: 87/158 priority: 58687/58687 [expanded 42850 state(s)]
+[LAMA] Best heuristic value: 74/139 priority: 59488/59488 [expanded 43431 state(s)]
+[LAMA] Best heuristic value: 61/120 priority: 59517/59517 [expanded 43445 state(s)]
+[LAMA] Best heuristic value: 61/117 priority: 59518/59518 [expanded 43446 state(s)]
+[LAMA] Best heuristic value: 54/101 priority: 111308/111308 [expanded 81026 state(s)]
+[LAMA] Best heuristic value: 41/82 priority: 111331/111331 [expanded 81047 state(s)]
+[LAMA] Best heuristic value: 41/79 priority: 111332/111332 [expanded 81049 state(s)]
+[LAMA] Best heuristic value: 28/51 priority: 236414/236414 [expanded 161269 state(s)]
+[LAMA] Best heuristic value: 23/41 priority: 236420/236420 [expanded 161280 state(s)]
+[LAMA] Best heuristic value: 21/41 priority: 236421/236421 [expanded 161283 state(s)]
+[LAMA] Best heuristic value: 15/23 priority: 236544/236544 [expanded 161354 state(s)]
+[LAMA] Best heuristic value: 14/20 priority: 236545/236545 [expanded 161355 state(s)]
+[LAMA] Best heuristic value: 7/10 priority: 236550/236550 [expanded 161358 state(s)]
+[LAMA] Solution found!
+Plan length: 33 step(s), cost: 379.
+Expanded 161367 state(s).
+Generated 2302841 state(s).
+Search time: 85.5 seconds
+Total time: 86.74 seconds
+[Info] Search iteration 6
+[Info] No more new weight, weight is 1
+[Info] Using the following heuristic(s):
+       FF heuristic 
+       Landmark heuristic 
+Conducting weighted A* search, weight is 1, bound is 379.
+[LAMA] Best heuristic value: 210/446 priority: 0/0 [expanded 1 state(s)]
+[LAMA] Best heuristic value: 208/446 priority: 0/0 [expanded 2 state(s)]
+[LAMA] Best heuristic value: 196/433 priority: 4/3 [expanded 4 state(s)]
+[LAMA] Best heuristic value: 194/433 priority: 4/4 [expanded 5 state(s)]
+[LAMA] Best heuristic value: 189/433 priority: 9/9 [expanded 8 state(s)]
+[LAMA] Best heuristic value: 187/433 priority: 9/9 [expanded 9 state(s)]
+[LAMA] Best heuristic value: 187/420 priority: 141/141 [expanded 103 state(s)]
+[LAMA] Best heuristic value: 182/420 priority: 150/150 [expanded 108 state(s)]
+[LAMA] Best heuristic value: 181/408 priority: 333/332 [expanded 228 state(s)]
+[LAMA] Best heuristic value: 176/408 priority: 338/338 [expanded 233 state(s)]
+[LAMA] Best heuristic value: 174/408 priority: 338/338 [expanded 234 state(s)]
+[LAMA] Best heuristic value: 174/395 priority: 759/759 [expanded 468 state(s)]
+[LAMA] Best heuristic value: 169/395 priority: 769/769 [expanded 474 state(s)]
+[LAMA] Best heuristic value: 167/395 priority: 1349/1349 [expanded 916 state(s)]
+[LAMA] Best heuristic value: 167/383 priority: 1910/1910 [expanded 1458 state(s)]
+[LAMA] Best heuristic value: 167/331 priority: 2554/2553 [expanded 2023 state(s)]
+[LAMA] Best heuristic value: 161/331 priority: 2570/2569 [expanded 2039 state(s)]
+[LAMA] Best heuristic value: 161/321 priority: 2726/2726 [expanded 2207 state(s)]
+[LAMA] Best heuristic value: 161/312 priority: 3017/3017 [expanded 2427 state(s)]
+[LAMA] Best heuristic value: 161/302 priority: 4410/4410 [expanded 3011 state(s)]
+[LAMA] Best heuristic value: 161/283 priority: 7299/7299 [expanded 4812 state(s)]
+[LAMA] Best heuristic value: 156/283 priority: 7312/7312 [expanded 4832 state(s)]
+[LAMA] Best heuristic value: 154/283 priority: 7318/7318 [expanded 4840 state(s)]
+[LAMA] Best heuristic value: 154/273 priority: 8145/8145 [expanded 5616 state(s)]
+[LAMA] Best heuristic value: 149/273 priority: 8155/8155 [expanded 5622 state(s)]
+[LAMA] Best heuristic value: 149/264 priority: 9406/9406 [expanded 6767 state(s)]
+[LAMA] Best heuristic value: 147/264 priority: 9471/9471 [expanded 6843 state(s)]
+[LAMA] Best heuristic value: 147/254 priority: 9581/9581 [expanded 6931 state(s)]
+[LAMA] Best heuristic value: 142/254 priority: 9596/9596 [expanded 6951 state(s)]
+[LAMA] Best heuristic value: 140/254 priority: 9806/9806 [expanded 7170 state(s)]
+[LAMA] Best heuristic value: 140/245 priority: 10002/10002 [expanded 7394 state(s)]
+[LAMA] Best heuristic value: 136/245 priority: 10009/10009 [expanded 7406 state(s)]
+[LAMA] Best heuristic value: 134/245 priority: 10016/10016 [expanded 7420 state(s)]
+[LAMA] Best heuristic value: 134/235 priority: 10396/10396 [expanded 7632 state(s)]
+[LAMA] Best heuristic value: 129/235 priority: 10411/10411 [expanded 7648 state(s)]
+[LAMA] Best heuristic value: 127/235 priority: 10798/10798 [expanded 7976 state(s)]
+[LAMA] Best heuristic value: 127/234 priority: 26709/26709 [expanded 19945 state(s)]
+[LAMA] Best heuristic value: 127/225 priority: 28860/28860 [expanded 21613 state(s)]
+[LAMA] Best heuristic value: 122/215 priority: 28876/28876 [expanded 21635 state(s)]
+[LAMA] Best heuristic value: 120/215 priority: 28877/28877 [expanded 21637 state(s)]
+[LAMA] Best heuristic value: 116/215 priority: 41040/41040 [expanded 30480 state(s)]
+[LAMA] Best heuristic value: 114/215 priority: 41048/41048 [expanded 30490 state(s)]
+[LAMA] Best heuristic value: 114/207 priority: 58088/58088 [expanded 42456 state(s)]
+[LAMA] Best heuristic value: 114/197 priority: 58095/58095 [expanded 42460 state(s)]
+[LAMA] Best heuristic value: 109/197 priority: 58106/58106 [expanded 42467 state(s)]
+[LAMA] Best heuristic value: 107/197 priority: 58142/58142 [expanded 42492 state(s)]
+[LAMA] Best heuristic value: 107/187 priority: 58230/58230 [expanded 42531 state(s)]
+[LAMA] Best heuristic value: 102/177 priority: 58245/58245 [expanded 42555 state(s)]
+[LAMA] Best heuristic value: 100/177 priority: 58246/58246 [expanded 42558 state(s)]
+[LAMA] Best heuristic value: 96/177 priority: 58448/58448 [expanded 42717 state(s)]
+[LAMA] Best heuristic value: 94/177 priority: 58455/58455 [expanded 42724 state(s)]
+[LAMA] Best heuristic value: 94/168 priority: 58669/58669 [expanded 42823 state(s)]
+[LAMA] Best heuristic value: 89/158 priority: 58684/58684 [expanded 42841 state(s)]
+[LAMA] Best heuristic value: 87/158 priority: 58685/58685 [expanded 42843 state(s)]
+[LAMA] Best heuristic value: 74/139 priority: 59487/59487 [expanded 43430 state(s)]
+[LAMA] Best heuristic value: 61/120 priority: 59516/59516 [expanded 43444 state(s)]
+[LAMA] Best heuristic value: 61/117 priority: 59517/59517 [expanded 43445 state(s)]
+[LAMA] Best heuristic value: 54/101 priority: 111314/111314 [expanded 81030 state(s)]
+[LAMA] Best heuristic value: 41/82 priority: 111335/111335 [expanded 81046 state(s)]
+[LAMA] Best heuristic value: 41/79 priority: 111336/111336 [expanded 81049 state(s)]
+[LAMA] Best heuristic value: 28/51 priority: 236432/236432 [expanded 161289 state(s)]
+[LAMA] Best heuristic value: 23/41 priority: 236441/236441 [expanded 161306 state(s)]
+[LAMA] Best heuristic value: 21/41 priority: 236442/236442 [expanded 161308 state(s)]
+[LAMA] Best heuristic value: 15/23 priority: 236563/236563 [expanded 161359 state(s)]
+[LAMA] Best heuristic value: 14/20 priority: 236564/236564 [expanded 161360 state(s)]
+[LAMA] Best heuristic value: 7/10 priority: 236569/236569 [expanded 161363 state(s)]
+[LAMA] Best heuristic value: 7/7 priority: 1261600/1261600 [expanded 753690 state(s)]
+[LAMA] Solution found!
+Plan length: 32 step(s), cost: 351.
+Expanded 753702 state(s).
+Generated 11340620 state(s).
+Search time: 395.28 seconds
+Total time: 482.02 seconds
+[Info] Search iteration 7
+[Info] No more new weight, weight is 1
+[Info] Using the following heuristic(s):
+       FF heuristic 
+       Landmark heuristic 
+Conducting weighted A* search, weight is 1, bound is 351.
+[LAMA] Best heuristic value: 210/446 priority: 0/0 [expanded 1 state(s)]
+[LAMA] Best heuristic value: 208/446 priority: 0/0 [expanded 2 state(s)]
+[LAMA] Best heuristic value: 196/433 priority: 4/3 [expanded 4 state(s)]
+[LAMA] Best heuristic value: 194/433 priority: 4/4 [expanded 5 state(s)]
+[LAMA] Best heuristic value: 189/433 priority: 9/9 [expanded 8 state(s)]
+[LAMA] Best heuristic value: 187/433 priority: 9/9 [expanded 9 state(s)]
+[LAMA] Best heuristic value: 187/420 priority: 141/141 [expanded 103 state(s)]
+[LAMA] Best heuristic value: 182/420 priority: 150/150 [expanded 108 state(s)]
+[LAMA] Best heuristic value: 181/408 priority: 333/332 [expanded 228 state(s)]
+[LAMA] Best heuristic value: 176/408 priority: 338/338 [expanded 233 state(s)]
+[LAMA] Best heuristic value: 174/408 priority: 338/338 [expanded 234 state(s)]
+[LAMA] Best heuristic value: 174/395 priority: 759/759 [expanded 468 state(s)]
+[LAMA] Best heuristic value: 169/395 priority: 769/769 [expanded 474 state(s)]
+[LAMA] Best heuristic value: 167/395 priority: 1349/1349 [expanded 916 state(s)]
+[LAMA] Best heuristic value: 167/383 priority: 1910/1910 [expanded 1458 state(s)]
+[LAMA] Best heuristic value: 167/331 priority: 2554/2553 [expanded 2023 state(s)]
+[LAMA] Best heuristic value: 161/331 priority: 2570/2569 [expanded 2039 state(s)]
+[LAMA] Best heuristic value: 161/321 priority: 2726/2726 [expanded 2207 state(s)]
+[LAMA] Best heuristic value: 161/312 priority: 3017/3017 [expanded 2427 state(s)]
+[LAMA] Best heuristic value: 161/302 priority: 4410/4410 [expanded 3011 state(s)]
+[LAMA] Best heuristic value: 161/283 priority: 7299/7299 [expanded 4812 state(s)]
+[LAMA] Best heuristic value: 156/283 priority: 7312/7312 [expanded 4832 state(s)]
+[LAMA] Best heuristic value: 154/283 priority: 7318/7318 [expanded 4840 state(s)]
+[LAMA] Best heuristic value: 154/273 priority: 8145/8145 [expanded 5616 state(s)]
+[LAMA] Best heuristic value: 149/273 priority: 8155/8155 [expanded 5622 state(s)]
+[LAMA] Best heuristic value: 149/264 priority: 9406/9406 [expanded 6767 state(s)]
+[LAMA] Best heuristic value: 147/264 priority: 9471/9471 [expanded 6843 state(s)]
+[LAMA] Best heuristic value: 147/254 priority: 9581/9581 [expanded 6931 state(s)]
+[LAMA] Best heuristic value: 142/254 priority: 9596/9596 [expanded 6951 state(s)]
+[LAMA] Best heuristic value: 140/254 priority: 9806/9806 [expanded 7170 state(s)]
+[LAMA] Best heuristic value: 140/245 priority: 10002/10002 [expanded 7394 state(s)]
+[LAMA] Best heuristic value: 136/245 priority: 10009/10009 [expanded 7406 state(s)]
+[LAMA] Best heuristic value: 134/245 priority: 10016/10016 [expanded 7420 state(s)]
+[LAMA] Best heuristic value: 134/235 priority: 10396/10396 [expanded 7632 state(s)]
+[LAMA] Best heuristic value: 129/235 priority: 10411/10411 [expanded 7648 state(s)]
+[LAMA] Best heuristic value: 127/235 priority: 10798/10798 [expanded 7976 state(s)]
+[LAMA] Best heuristic value: 127/234 priority: 26709/26709 [expanded 19945 state(s)]
+[LAMA] Best heuristic value: 127/225 priority: 28860/28860 [expanded 21613 state(s)]
+[LAMA] Best heuristic value: 122/215 priority: 28876/28876 [expanded 21635 state(s)]
+[LAMA] Best heuristic value: 120/215 priority: 28877/28877 [expanded 21637 state(s)]
+[LAMA] Best heuristic value: 116/215 priority: 41040/41040 [expanded 30480 state(s)]
+[LAMA] Best heuristic value: 114/215 priority: 41048/41048 [expanded 30490 state(s)]
+[LAMA] Best heuristic value: 114/207 priority: 58088/58088 [expanded 42456 state(s)]
+[LAMA] Best heuristic value: 114/197 priority: 58095/58095 [expanded 42460 state(s)]
+[LAMA] Best heuristic value: 109/197 priority: 58106/58106 [expanded 42467 state(s)]
+[LAMA] Best heuristic value: 107/197 priority: 58142/58142 [expanded 42492 state(s)]
+[LAMA] Best heuristic value: 107/187 priority: 58230/58230 [expanded 42531 state(s)]
+[LAMA] Best heuristic value: 102/177 priority: 58245/58245 [expanded 42555 state(s)]
+[LAMA] Best heuristic value: 100/177 priority: 58246/58246 [expanded 42558 state(s)]
+[LAMA] Best heuristic value: 96/177 priority: 58448/58448 [expanded 42717 state(s)]
+[LAMA] Best heuristic value: 94/177 priority: 58455/58455 [expanded 42724 state(s)]
+[LAMA] Best heuristic value: 94/168 priority: 58669/58669 [expanded 42823 state(s)]
+[LAMA] Best heuristic value: 89/158 priority: 58684/58684 [expanded 42841 state(s)]
+[LAMA] Best heuristic value: 87/158 priority: 58685/58685 [expanded 42843 state(s)]
+[LAMA] Best heuristic value: 74/139 priority: 59487/59487 [expanded 43430 state(s)]
+[LAMA] Best heuristic value: 61/120 priority: 59516/59516 [expanded 43444 state(s)]
+[LAMA] Best heuristic value: 61/117 priority: 59517/59517 [expanded 43445 state(s)]

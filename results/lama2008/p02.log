@@ -1,0 +1,401 @@
+1. Running translator
+Parsing... [0.000s CPU, 0.046s wall-clock]
+Instantiating...
+Normalizing task... [0.000s CPU, 0.000s wall-clock]
+Generating Datalog program... [0.000s CPU, 0.001s wall-clock]
+Normalizing Datalog program...
+Normalizing Datalog program: [0.010s CPU, 0.012s wall-clock]
+Preparing model... [0.000s CPU, 0.019s wall-clock]
+Generated 47 rules.
+Computing model... [0.130s CPU, 0.135s wall-clock]
+5505 relevant atoms
+2128 auxiliary atoms
+7633 final queue length
+16641 total queue pushes
+Completing instantiation... [0.470s CPU, 0.475s wall-clock]
+Instantiating: [0.620s CPU, 0.646s wall-clock]
+Computing fact groups...
+Finding invariants... 11 initial candidates
+[0.020s CPU, 0.017s wall-clock]
+Checking invariant weight... [0.000s CPU, 0.000s wall-clock]
+Instantiating groups... [0.000s CPU, 0.001s wall-clock]
+Collecting mutex groups... [0.000s CPU, 0.000s wall-clock]
+Choosing groups...
+303 uncovered facts
+Choosing groups: [0.000s CPU, 0.002s wall-clock]
+Building translation key... [0.000s CPU, 0.001s wall-clock]
+Computing fact groups: [0.020s CPU, 0.021s wall-clock]
+Building STRIPS to SAS dictionary... [0.000s CPU, 0.001s wall-clock]
+Building dictionary for full mutex groups... [0.000s CPU, 0.001s wall-clock]
+Translating task...
+Processing axioms...
+Simplifying axioms... [0.000s CPU, 0.000s wall-clock]
+Processing axioms: [0.020s CPU, 0.022s wall-clock]
+Translating task: [0.270s CPU, 0.269s wall-clock]
+1604 implied effects removed
+0 effect conditions simplified
+0 implied preconditions added
+Building mutex information...
+Building mutex information: [0.000s CPU, 0.001s wall-clock]
+Detecting unreachable propositions...
+164 operators removed
+4 propositions removed
+Detecting unreachable propositions: [0.060s CPU, 0.058s wall-clock]
+Writing translation key... [0.000s CPU, 0.001s wall-clock]
+Writing mutex key... [0.000s CPU, 0.003s wall-clock]
+Writing output... [0.030s CPU, 0.039s wall-clock]
+Done! [1.020s CPU, 1.104s wall-clock]
+2. Running preprocessor
+Building causal graph...
+The causal graph is not acyclic.
+322 variables of 322 necessary
+4884 of 4884 operators necessary.
+0 of 0 axiom rules necessary.
+Building domain transition graphs...
+solveable in poly time 0
+Building successor generator...
+Writing output...
+done
+
+3. Running search
+Simplifying transitions... done!
+Initializing HSP/FF heuristic...
+Reading invariants from file...
+done
+Generating landmarks using the RPG/SAS+ approach
+approx. reasonable orders
+approx. obedient reasonable orders
+Removed 0 reasonable or obedient reasonable orders
+Generated 28 landmarks, of which 5 are disjunctive
+          51 edges
+14 initial landmarks, 3 goal landmarks
+Landmarks generation time: 0.16 seconds
+Search iteration 1
+Using the following heuristic(s):
+FF heuristic with preferred operators
+Landmark heuristic with preferred operators
+Initializing HSP/FF heuristic...
+Initializing landmarks count heuristic...
+Conducting best first search.
+Best heuristic value: 130/270 [expanded 1 state(s)]
+Best heuristic value: 128/270 [expanded 2 state(s)]
+Best heuristic value: 116/257 [expanded 4 state(s)]
+Best heuristic value: 114/257 [expanded 5 state(s)]
+Best heuristic value: 101/232 [expanded 7 state(s)]
+Best heuristic value: 88/195 [expanded 10 state(s)]
+Best heuristic value: 83/195 [expanded 13 state(s)]
+Best heuristic value: 81/195 [expanded 14 state(s)]
+Best heuristic value: 68/158 [expanded 16 state(s)]
+Best heuristic value: 55/133 [expanded 19 state(s)]
+Best heuristic value: 50/107 [expanded 23 state(s)]
+Best heuristic value: 48/107 [expanded 24 state(s)]
+Best heuristic value: 43/94 [expanded 26 state(s)]
+Best heuristic value: 41/94 [expanded 27 state(s)]
+Best heuristic value: 28/69 [expanded 29 state(s)]
+Best heuristic value: 28/66 [expanded 30 state(s)]
+Best heuristic value: 23/53 [expanded 32 state(s)]
+Best heuristic value: 21/53 [expanded 33 state(s)]
+Best heuristic value: 8/16 [expanded 34 state(s)]
+Best heuristic value: 7/13 [expanded 35 state(s)]
+Solution found!
+move-wood-at-table w1 pile raw natural basic empty half-full (12)
+grabtool saw (2)
+cut-wood w1 hexagon natural basic (24)
+laytool saw (2)
+grabtool brush (2)
+paint-wood w1 hexagon red basic (36)
+laytool brush (2)
+move-wood-at-table w3 pile raw natural basic half-full full (12)
+grabtool brush (2)
+paint-wood w3 raw yellow basic (36)
+laytool brush (2)
+grabtool saw (2)
+cut-wood w3 circle yellow basic (24)
+laytool saw (2)
+move-wood-from-table w3 finished-pile circle yellow basic full half-full (12)
+move-wood-at-table w2 pile raw natural basic half-full full (12)
+grabtool saw (2)
+cut-wood w2 triangle natural basic (24)
+laytool saw (2)
+move-wood-from-table w1 finished-pile hexagon red basic full half-full (12)
+grabtool brush (2)
+paint-wood w2 triangle blue basic (36)
+laytool brush (2)
+move-wood-from-table w2 finished-pile triangle blue basic half-full empty (12)
+Plan length: 24 step(s), cost: 276.
+Expanded 36 state(s).
+Generated 219 state(s).
+Search time: 0.02 seconds
+Total time: 0.18 seconds
+Search iteration 2
+Using the following heuristic(s):
+FF heuristic with preferred operators
+Landmark heuristic with preferred operators
+Initializing landmarks count heuristic...
+Conducting weighted A* search, weight is 5, bound is 276.
+Best heuristic value: 130/270 [expanded 1 state(s)]
+Best heuristic value: 128/270 [expanded 2 state(s)]
+Best heuristic value: 116/257 [expanded 4 state(s)]
+Best heuristic value: 114/257 [expanded 5 state(s)]
+Best heuristic value: 109/257 [expanded 7 state(s)]
+Best heuristic value: 107/257 [expanded 8 state(s)]
+Best heuristic value: 94/232 [expanded 15 state(s)]
+Best heuristic value: 81/207 [expanded 20 state(s)]
+Best heuristic value: 68/170 [expanded 25 state(s)]
+Best heuristic value: 63/144 [expanded 28 state(s)]
+Best heuristic value: 61/144 [expanded 29 state(s)]
+Best heuristic value: 56/131 [expanded 31 state(s)]
+Best heuristic value: 54/131 [expanded 32 state(s)]
+Best heuristic value: 41/106 [expanded 34 state(s)]
+Best heuristic value: 41/103 [expanded 35 state(s)]
+Best heuristic value: 28/66 [expanded 37 state(s)]
+Best heuristic value: 23/53 [expanded 39 state(s)]
+Best heuristic value: 21/53 [expanded 40 state(s)]
+Best heuristic value: 8/16 [expanded 41 state(s)]
+Best heuristic value: 7/13 [expanded 42 state(s)]
+Solution found!
+move-wood-at-table w1 pile raw natural basic empty half-full (12)
+move-wood-at-table w2 pile raw natural basic half-full full (12)
+grabtool saw (2)
+cut-wood w1 hexagon natural basic (24)
+cut-wood w2 triangle natural basic (24)
+laytool saw (2)
+grabtool brush (2)
+paint-wood w1 hexagon red basic (36)
+laytool brush (2)
+move-wood-from-table w1 finished-pile hexagon red basic full half-full (12)
+move-wood-at-table w3 pile raw natural basic half-full full (12)
+grabtool saw (2)
+cut-wood w3 circle natural basic (24)
+laytool saw (2)
+grabtool brush (2)
+paint-wood w3 circle yellow basic (36)
+laytool brush (2)
+move-wood-from-table w3 finished-pile circle yellow basic full half-full (12)
+grabtool brush (2)
+paint-wood w2 triangle blue basic (36)
+laytool brush (2)
+move-wood-from-table w2 finished-pile triangle blue basic half-full empty (12)
+Plan length: 22 step(s), cost: 272.
+Expanded 43 state(s).
+Generated 312 state(s).
+Search time: 0.02 seconds
+Total time: 0.2 seconds
+Search iteration 3
+Using the following heuristic(s):
+FF heuristic with preferred operators
+Landmark heuristic with preferred operators
+Initializing landmarks count heuristic...
+Conducting weighted A* search, weight is 3, bound is 272.
+Best heuristic value: 130/270 [expanded 1 state(s)]
+Best heuristic value: 128/270 [expanded 2 state(s)]
+Best heuristic value: 116/257 [expanded 4 state(s)]
+Best heuristic value: 114/257 [expanded 5 state(s)]
+Best heuristic value: 109/257 [expanded 7 state(s)]
+Best heuristic value: 107/257 [expanded 8 state(s)]
+Best heuristic value: 94/232 [expanded 15 state(s)]
+Best heuristic value: 81/207 [expanded 20 state(s)]
+Best heuristic value: 68/170 [expanded 26 state(s)]
+Best heuristic value: 63/144 [expanded 29 state(s)]
+Best heuristic value: 61/144 [expanded 30 state(s)]
+Best heuristic value: 56/131 [expanded 32 state(s)]
+Best heuristic value: 54/131 [expanded 33 state(s)]
+Best heuristic value: 41/106 [expanded 35 state(s)]
+Best heuristic value: 41/103 [expanded 36 state(s)]
+Best heuristic value: 28/66 [expanded 38 state(s)]
+Best heuristic value: 23/53 [expanded 40 state(s)]
+Best heuristic value: 21/53 [expanded 41 state(s)]
+Best heuristic value: 8/16 [expanded 42 state(s)]
+Best heuristic value: 7/13 [expanded 43 state(s)]
+Solution found!
+move-wood-at-table w1 pile raw natural basic empty half-full (12)
+move-wood-at-table w2 pile raw natural basic half-full full (12)
+grabtool saw (2)
+cut-wood w1 hexagon natural basic (24)
+cut-wood w2 triangle natural basic (24)
+laytool saw (2)
+grabtool brush (2)
+paint-wood w1 hexagon red basic (36)
+laytool brush (2)
+move-wood-from-table w1 finished-pile hexagon red basic full half-full (12)
+move-wood-at-table w3 pile raw natural basic half-full full (12)
+grabtool saw (2)
+cut-wood w3 circle natural basic (24)
+laytool saw (2)
+grabtool brush (2)
+paint-wood w3 circle yellow basic (36)
+paint-wood w2 triangle blue basic (36)
+laytool brush (2)
+move-wood-from-table w3 finished-pile circle yellow basic full half-full (12)
+move-wood-from-table w2 finished-pile triangle blue basic half-full empty (12)
+Plan length: 20 step(s), cost: 268.
+Expanded 46 state(s).
+Generated 337 state(s).
+Search time: 0.02 seconds
+Total time: 0.22 seconds
+Search iteration 4
+Using the following heuristic(s):
+FF heuristic with preferred operators
+Landmark heuristic with preferred operators
+Initializing landmarks count heuristic...
+Conducting weighted A* search, weight is 2, bound is 268.
+Best heuristic value: 130/270 [expanded 1 state(s)]
+Best heuristic value: 128/270 [expanded 2 state(s)]
+Best heuristic value: 116/257 [expanded 4 state(s)]
+Best heuristic value: 114/257 [expanded 5 state(s)]
+Best heuristic value: 109/257 [expanded 7 state(s)]
+Best heuristic value: 107/257 [expanded 8 state(s)]
+Best heuristic value: 94/232 [expanded 15 state(s)]
+Best heuristic value: 81/207 [expanded 20 state(s)]
+Best heuristic value: 68/170 [expanded 54 state(s)]
+Best heuristic value: 63/144 [expanded 60 state(s)]
+Best heuristic value: 61/144 [expanded 61 state(s)]
+Best heuristic value: 56/131 [expanded 63 state(s)]
+Best heuristic value: 54/131 [expanded 64 state(s)]
+Best heuristic value: 41/106 [expanded 66 state(s)]
+Best heuristic value: 41/103 [expanded 67 state(s)]
+Best heuristic value: 28/66 [expanded 69 state(s)]
+Best heuristic value: 23/53 [expanded 71 state(s)]
+Best heuristic value: 21/53 [expanded 72 state(s)]
+Best heuristic value: 8/16 [expanded 75 state(s)]
+Best heuristic value: 7/13 [expanded 77 state(s)]
+Best heuristic value: 7/10 [expanded 10293 state(s)]
+Solution found!
+move-wood-at-table w2 pile raw natural basic empty half-full (12)
+move-wood-at-table w3 pile raw natural basic half-full full (12)
+grabtool saw (2)
+upgrade-robot basic advanced (40)
+cut-wood w3 circle natural advanced (18)
+cut-wood w2 triangle natural advanced (18)
+laytool saw (2)
+grabtool brush (2)
+paint-wood w2 triangle blue advanced (27)
+laytool brush (2)
+move-wood-from-table w2 finished-pile triangle blue advanced full half-full (9)
+move-wood-at-table w1 pile raw natural advanced half-full full (9)
+grabtool saw (2)
+cut-wood w1 hexagon natural advanced (18)
+laytool saw (2)
+grabtool brush (2)
+paint-wood w3 circle yellow advanced (27)
+laytool brush (2)
+move-wood-from-table w3 finished-pile circle yellow advanced full half-full (9)
+grabtool brush (2)
+paint-wood w1 hexagon red advanced (27)
+laytool brush (2)
+move-wood-from-table w1 finished-pile hexagon red advanced half-full empty (9)
+Plan length: 23 step(s), cost: 255.
+Expanded 10294 state(s).
+Generated 93958 state(s).
+Search time: 5.96 seconds
+Total time: 6.18 seconds
+Search iteration 5
+Using the following heuristic(s):
+FF heuristic 
+Landmark heuristic 
+Initializing landmarks count heuristic...
+Conducting weighted A* search, weight is 1, bound is 255.
+Best heuristic value: 130/270 [expanded 1 state(s)]
+Best heuristic value: 128/270 [expanded 2 state(s)]
+Best heuristic value: 123/270 [expanded 4 state(s)]
+Best heuristic value: 121/270 [expanded 6 state(s)]
+Best heuristic value: 116/257 [expanded 7 state(s)]
+Best heuristic value: 114/257 [expanded 8 state(s)]
+Best heuristic value: 109/257 [expanded 11 state(s)]
+Best heuristic value: 107/257 [expanded 12 state(s)]
+Best heuristic value: 107/244 [expanded 71 state(s)]
+Best heuristic value: 102/231 [expanded 79 state(s)]
+Best heuristic value: 100/231 [expanded 81 state(s)]
+Best heuristic value: 96/231 [expanded 188 state(s)]
+Best heuristic value: 94/231 [expanded 189 state(s)]
+Best heuristic value: 94/219 [expanded 313 state(s)]
+Best heuristic value: 89/206 [expanded 318 state(s)]
+Best heuristic value: 87/206 [expanded 319 state(s)]
+Best heuristic value: 87/194 [expanded 844 state(s)]
+Best heuristic value: 83/194 [expanded 1227 state(s)]
+Best heuristic value: 83/182 [expanded 1241 state(s)]
+Best heuristic value: 76/169 [expanded 1249 state(s)]
+Best heuristic value: 74/169 [expanded 1251 state(s)]
+Best heuristic value: 69/156 [expanded 1261 state(s)]
+Best heuristic value: 67/156 [expanded 1263 state(s)]
+Best heuristic value: 67/139 [expanded 2728 state(s)]
+Best heuristic value: 61/120 [expanded 2746 state(s)]
+Best heuristic value: 61/117 [expanded 2747 state(s)]
+Best heuristic value: 54/101 [expanded 3842 state(s)]
+Best heuristic value: 41/82 [expanded 3870 state(s)]
+Best heuristic value: 41/79 [expanded 3871 state(s)]
+Best heuristic value: 28/51 [expanded 11249 state(s)]
+Best heuristic value: 23/41 [expanded 11256 state(s)]
+Best heuristic value: 21/41 [expanded 11257 state(s)]
+Best heuristic value: 15/23 [expanded 11342 state(s)]
+Best heuristic value: 14/20 [expanded 11344 state(s)]
+Best heuristic value: 7/10 [expanded 11352 state(s)]
+Solution found!
+upgrade-robot basic advanced (40)
+move-wood-at-table w1 pile raw natural advanced empty half-full (9)
+grabtool brush (2)
+paint-wood w1 raw red advanced (27)
+laytool brush (2)
+grabtool saw (2)
+cut-wood w1 hexagon red advanced (18)
+laytool saw (2)
+move-wood-from-table w1 finished-pile hexagon red advanced half-full empty (9)
+move-wood-at-table w2 pile raw natural advanced empty half-full (9)
+move-wood-at-table w3 pile raw natural advanced half-full full (9)
+grabtool saw (2)
+cut-wood w2 triangle natural advanced (18)
+cut-wood w3 circle natural advanced (18)
+laytool saw (2)
+grabtool brush (2)
+paint-wood w3 circle yellow advanced (27)
+paint-wood w2 triangle blue advanced (27)
+laytool brush (2)
+move-wood-from-table w3 finished-pile circle yellow advanced full half-full (9)
+move-wood-from-table w2 finished-pile triangle blue advanced half-full empty (9)
+Plan length: 21 step(s), cost: 245.
+Expanded 11372 state(s).
+Generated 135659 state(s).
+Search time: 5.82 seconds
+Total time: 12 seconds
+Search iteration 6
+No more new weight, weight is 1
+Using the following heuristic(s):
+FF heuristic 
+Landmark heuristic 
+Initializing landmarks count heuristic...
+Conducting weighted A* search, weight is 1, bound is 245.
+Best heuristic value: 130/270 [expanded 1 state(s)]
+Best heuristic value: 128/270 [expanded 2 state(s)]
+Best heuristic value: 123/270 [expanded 4 state(s)]
+Best heuristic value: 121/270 [expanded 6 state(s)]
+Best heuristic value: 116/257 [expanded 7 state(s)]
+Best heuristic value: 114/257 [expanded 8 state(s)]
+Best heuristic value: 109/257 [expanded 11 state(s)]
+Best heuristic value: 107/257 [expanded 12 state(s)]
+Best heuristic value: 107/244 [expanded 71 state(s)]
+Best heuristic value: 102/231 [expanded 79 state(s)]
+Best heuristic value: 100/231 [expanded 81 state(s)]
+Best heuristic value: 96/231 [expanded 188 state(s)]
+Best heuristic value: 94/231 [expanded 189 state(s)]
+Best heuristic value: 94/219 [expanded 313 state(s)]
+Best heuristic value: 89/206 [expanded 318 state(s)]
+Best heuristic value: 87/206 [expanded 319 state(s)]
+Best heuristic value: 87/194 [expanded 844 state(s)]
+Best heuristic value: 83/194 [expanded 1227 state(s)]
+Best heuristic value: 83/182 [expanded 1241 state(s)]
+Best heuristic value: 76/169 [expanded 1249 state(s)]
+Best heuristic value: 74/169 [expanded 1251 state(s)]
+Best heuristic value: 69/156 [expanded 1261 state(s)]
+Best heuristic value: 67/156 [expanded 1263 state(s)]
+Best heuristic value: 67/139 [expanded 2728 state(s)]
+Best heuristic value: 61/120 [expanded 2746 state(s)]
+Best heuristic value: 61/117 [expanded 2747 state(s)]
+Best heuristic value: 54/101 [expanded 3842 state(s)]
+Best heuristic value: 41/82 [expanded 3870 state(s)]
+Best heuristic value: 41/79 [expanded 3871 state(s)]
+Best heuristic value: 28/51 [expanded 11249 state(s)]
+Best heuristic value: 23/41 [expanded 11256 state(s)]
+Best heuristic value: 21/41 [expanded 11257 state(s)]
+Best heuristic value: 15/23 [expanded 11342 state(s)]
+Best heuristic value: 14/20 [expanded 11344 state(s)]
+Best heuristic value: 7/10 [expanded 11352 state(s)]
